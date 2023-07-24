@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
-import 'info_card.dart';
 
 class CoalitionDashboard extends StatefulWidget {
   const CoalitionDashboard({super.key});
@@ -156,7 +155,6 @@ class _CoalitionDashboardState extends State<CoalitionDashboard> {
             "Other games are dynamically played throughout the week.",
             style: TextStyle(fontSize: 20, color: Colors.grey),
           ),
-         
         ],
       ),
     );
