@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Coalition Group',
       theme: kDarkThemeData,
-      home: const CoalitionHomePage(title: 'Flutter Demo Home Page'),
+      home: const CoalitionHomePage(title: 'Coalition Group'),
     );
   }
 }
