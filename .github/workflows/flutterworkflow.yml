@@ -3,7 +3,7 @@ on:
     branches:
     - master
 jobs:
-  Build-Flutter-Web:
+   Build-Flutter-Web:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
@@ -13,8 +13,7 @@ jobs:
     - run: flutter pub get
     - run: flutter build web
     - uses: shallwefootball/s3-upload-action@master
-    - id: S3
-    - with:
+      with:
         aws_key_id: ${{ secrets.AWS_KEY_ID }}
         aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws_bucket: jessevangool.com
