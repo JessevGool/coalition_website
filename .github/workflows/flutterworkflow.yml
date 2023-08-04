@@ -18,6 +18,7 @@ jobs:
         aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws_bucket: jessevangool.com
         source_dir: build/web
+        destination_dir: /
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v2
       with:
