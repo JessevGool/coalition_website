@@ -18,6 +18,7 @@ jobs:
         port: ${{secrets.FTP_PORT}}
         username: ${{secrets.FTP_USER}}
         password: ${{ secrets.FTP_PASS }}
+        local-dir: build/web/
     - uses: shallwefootball/s3-upload-action@master
       with:
         aws_key_id: ${{ secrets.AWS_KEY_ID }}
