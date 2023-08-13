@@ -15,7 +15,8 @@ jobs:
     - uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_TARGET }}
-        username: 1st-section
+        port: ${{secrets.FTP_PORT}}
+        username: ${{secrets.FTP_USER}}
         password: ${{ secrets.FTP_PASS }}
     - uses: shallwefootball/s3-upload-action@master
       with:
