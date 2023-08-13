@@ -1,6 +1,6 @@
 # coalition_website
 
-A new Flutter project.
+Flutter development repository
 
 ## Getting Started
 
