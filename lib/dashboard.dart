@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
+
 class CoalitionDashboard extends StatefulWidget {
   const CoalitionDashboard({super.key});
 
@@ -12,7 +13,7 @@ class _CoalitionDashboardState extends State<CoalitionDashboard> {
   List<String> images = [
     "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Leopard_2_A7.JPG/640px-Leopard_2_A7.JPG",
     "https://static.euronews.com/articles/stories/07/66/69/72/1440x810_cmsv2_d5d3e98f-f4ab-5b0a-b204-f9b5df5068ac-7666972.jpg",
-    "https://en.wikipedia.org/wiki/File:US_Navy_071203-N-8923M-074_An_F-A-18F_Super_Hornet,_from_the_Red_Rippers_of_Strike_Fighter_Squadron_(VFA)_11,_makes_a_sharp_turn_above_the_flight_deck_aboard_the_Nimitz-class_nuclear-powered_aircraft_carrier_USS_Harry_S._Truman.jpg"
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIdYXedPERUB8y699LjLIuFV8AB_Y3EE18-A&usqp=CAU"
   ];
   @override
   Widget build(BuildContext context) {
