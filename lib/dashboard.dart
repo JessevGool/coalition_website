@@ -11,9 +11,9 @@ class CoalitionDashboard extends StatefulWidget {
 
 class _CoalitionDashboardState extends State<CoalitionDashboard> {
   List<String> images = [
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Leopard_2_A7.JPG/640px-Leopard_2_A7.JPG",
-    "https://static.euronews.com/articles/stories/07/66/69/72/1440x810_cmsv2_d5d3e98f-f4ab-5b0a-b204-f9b5df5068ac-7666972.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIdYXedPERUB8y699LjLIuFV8AB_Y3EE18-A&usqp=CAU"
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Leopard_2_Prototyp_PT15_T02_105mm.jpg/260px-Leopard_2_Prototyp_PT15_T02_105mm.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Leopard2_a5_front.jpg/260px-Leopard2_a5_front.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Leo2A5.JPG/260px-Leo2A5.JPG"
   ];
   @override
   Widget build(BuildContext context) {
