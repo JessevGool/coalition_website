@@ -12,6 +12,11 @@ jobs:
         channel: 'stable'
     - run: flutter pub get
     - run: flutter build web
+    - uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: 135.148.136.167:8021
+        username: 1st-section
+        password: ${{ secrets.FTP_PASS }}
     - uses: shallwefootball/s3-upload-action@master
       with:
         aws_key_id: ${{ secrets.AWS_KEY_ID }}
