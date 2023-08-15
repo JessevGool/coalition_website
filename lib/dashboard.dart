@@ -98,7 +98,7 @@ class _CoalitionDashboardState extends State<CoalitionDashboard> {
                                   children: [
                                     TextSpan(
                                       text:
-                                          "We are an adult gaming community which hosts ArmA3 sessions twice a week as well as large, multi-community, historical battles called “CCOs” or “Coalition Community Operations” once a month.\n\n",
+                                          "We are an adult gaming community which hosts ArmA 3 sessions twice a week as well as large, multi-community, historical battles called “CCOs” or “Coalition Community Operations” once a month.\n\n",
                                     ),
                                     TextSpan(
                                       text:
@@ -135,7 +135,7 @@ class _CoalitionDashboardState extends State<CoalitionDashboard> {
               style: TextStyle(fontSize: 50, color: Colors.white),
               textAlign: TextAlign.center),
           const SizedBox(height: 10),
-          const Text("Coalition has ArmA3 sessions twice a week.",
+          const Text("Coalition has ArmA 3 sessions twice a week.",
               style: TextStyle(fontSize: 20, color: Colors.grey),
               textAlign: TextAlign.center),
           const SizedBox(
