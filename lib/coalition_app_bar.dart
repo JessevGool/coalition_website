@@ -8,7 +8,8 @@ class CoalitionAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      actions: [ TextButton(
+        actions: [
+          TextButton(
             style: TextButton.styleFrom(
               textStyle: const TextStyle(fontSize: 20),
             ),
@@ -16,7 +17,8 @@ class CoalitionAppBar extends StatelessWidget implements PreferredSizeWidget {
               _launchURL("https://events.coalitiongroup.net/");
             },
             child: const Text('EVENTS'),
-          ),  TextButton(
+          ),
+          TextButton(
             style: TextButton.styleFrom(
               textStyle: const TextStyle(fontSize: 20),
             ),
@@ -24,7 +26,8 @@ class CoalitionAppBar extends StatelessWidget implements PreferredSizeWidget {
               _launchURL("https://coalitiongroup.net/arma/merch/");
             },
             child: const Text('MERCH'),
-          ), TextButton(
+          ),
+          TextButton(
             style: TextButton.styleFrom(
               textStyle: const TextStyle(fontSize: 20),
             ),
@@ -32,7 +35,8 @@ class CoalitionAppBar extends StatelessWidget implements PreferredSizeWidget {
               _launchURL("https://coalitiongroup.net/arma/streams/");
             },
             child: const Text('STREAMS'),
-          ), TextButton(
+          ),
+          TextButton(
             style: TextButton.styleFrom(
               textStyle: const TextStyle(fontSize: 20),
             ),
@@ -40,37 +44,47 @@ class CoalitionAppBar extends StatelessWidget implements PreferredSizeWidget {
               _launchURL("https://discord.com/invite/HkeTRQ3");
             },
             child: const Text('DISCORD'),
-          ), TextButton(
+          ),
+          TextButton(
             style: TextButton.styleFrom(
               textStyle: const TextStyle(fontSize: 20),
             ),
             onPressed: () {
               _launchURL("https://discord.com/invite/armacoalition");
             },
-            child:  Text('JOIN',style: TextStyle(color: kDarkThemeData.colorScheme.secondary),),
-          ),],
-      title: Row(children: [
-        buildLeading(context),
-      ],)
-    );
+            child: Text(
+              'JOIN',
+              style: TextStyle(color: kDarkThemeData.colorScheme.secondary),
+            ),
+          ),
+        ],
+        title: Row(
+          children: [
+            buildLeading(context),
+          ],
+        ));
   }
+
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
-  
+
   buildLeading(BuildContext context) {
-    return Padding(padding: const EdgeInsets.all(8),child: Row(children: [
-      Image.asset("assets/cropped-site_logo-3.png", height: 50,)
-    
-    ],));
+    return Padding(
+        padding: const EdgeInsets.all(8),
+        child: Row(
+          children: [
+            Image.asset(
+              "assets/cropped-site_logo-3.png",
+              height: 50,
+            )
+          ],
+        ));
   }
 
-
   _launchURL(String uri) async {
-   final Uri url = Uri.parse(uri);
-   if (!await launchUrl(url)) {
-        throw Exception('Could not launch $url');
+    final Uri url = Uri.parse(uri);
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
     }
+  }
 }
-}
-
-

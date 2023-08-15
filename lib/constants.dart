@@ -1,8 +1,7 @@
 import 'dart:ui';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
+
 Color backgroundColor = const Color(0xff262626);
-
-
 
 final kDarkThemeData = FlexThemeData.dark(
   colors: const FlexSchemeColor(
