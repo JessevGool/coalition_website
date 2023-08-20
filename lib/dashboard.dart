@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -10,9 +11,9 @@ class CoalitionDashboard extends StatefulWidget {
 
 class _CoalitionDashboardState extends State<CoalitionDashboard> {
   List<String> images = [
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Leopard_2_Prototyp_PT15_T02_105mm.jpg/260px-Leopard_2_Prototyp_PT15_T02_105mm.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Leopard2_a5_front.jpg/260px-Leopard2_a5_front.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Leo2A5.JPG/260px-Leo2A5.JPG"
+    "https://cdn.discordapp.com/attachments/1026845303980167199/1027046232893444217/unknown.png",
+    "https://cdn.discordapp.com/attachments/1026845303980167199/1027043878018220042/unknown.png",
+    "https://cdn.discordapp.com/attachments/438868677853446145/1141518969812041728/image.png"
   ];
   @override
   Widget build(BuildContext context) {
@@ -50,20 +51,23 @@ class _CoalitionDashboardState extends State<CoalitionDashboard> {
                   flex: 1,
                   child: CarouselSlider(
                     options: CarouselOptions(
-                      height: 200.0,
+                      height: 400.0,
                       enlargeCenterPage: true,
                       enableInfiniteScroll: true,
-                      viewportFraction: 0.33,
+                      viewportFraction: 0.5,
                       initialPage: 1,
                     ),
                     items: images.map<Widget>((i) {
                       return Builder(
                         builder: (BuildContext context) {
                           return Container(
-                              width: MediaQuery.of(context).size.width,
+                              
                               decoration: BoxDecoration(
-                                  image:
-                                      DecorationImage(image: NetworkImage(i))));
+                                  image: DecorationImage(
+                                      image: CachedNetworkImageProvider(i,
+                                          errorListener: () => Image.asset(
+                                                "assets/cropped-coalitionsmall-1.png",
+                                              )))));
                         },
                       );
                     }).toList(),
