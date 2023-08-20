@@ -11,6 +11,7 @@ class _ErrorScreenState extends State<ErrorView> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(widget.exception),);
+      child: Text(widget.exception),
+    );
   }
 }

@@ -6,7 +6,11 @@ class WIP_View extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Center(
-      child: Column(mainAxisAlignment: MainAxisAlignment.center,children: [Text("Work in Progress"),TextButton(onPressed: () => context.go("/"), child: Text("Go back"))]),);
+    return Center(
+      child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Text("Work in Progress"),
+        TextButton(onPressed: () => context.go("/"), child: Text("Go back"))
+      ]),
+    );
   }
 }
