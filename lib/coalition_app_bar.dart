@@ -1,5 +1,6 @@
 import 'package:coalition_website/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class CoalitionAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -23,7 +24,7 @@ class CoalitionAppBar extends StatelessWidget implements PreferredSizeWidget {
               textStyle: const TextStyle(fontSize: 20),
             ),
             onPressed: () {
-              _launchURL("https://coalitiongroup.net/arma/merch/");
+              context.go('/arma/merch');
             },
             child: const Text('MERCH'),
           ),
@@ -32,7 +33,7 @@ class CoalitionAppBar extends StatelessWidget implements PreferredSizeWidget {
               textStyle: const TextStyle(fontSize: 20),
             ),
             onPressed: () {
-              _launchURL("https://coalitiongroup.net/arma/streams/");
+              context.go('/arma/streams');
             },
             child: const Text('STREAMS'),
           ),
