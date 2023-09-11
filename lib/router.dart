@@ -10,15 +10,17 @@ final router = GoRouter(
     GoRoute(
         path: '/',
         pageBuilder: (context, state) => MaterialPage(
-            child: const CoalitionHomePage(title: 'Coalition Group'))),
-    GoRoute(
-        path: '/arma/merch',
-        pageBuilder: (context, state) =>
-            MaterialPage(child: const MerchView())),
-    GoRoute(
-        path: '/arma/streams',
-        pageBuilder: (context, state) =>
-            MaterialPage(child: const StreamsView())),
+            child: const CoalitionHomePage(title: 'Coalition Group')),
+        routes: <RouteBase>[
+          GoRoute(
+              path: 'arma/merch',
+              pageBuilder: (context, state) =>
+                  MaterialPage(child: const MerchView())),
+          GoRoute(
+              path: 'arma/streams',
+              pageBuilder: (context, state) =>
+                  MaterialPage(child: const StreamsView())),
+        ]),
   ],
   errorBuilder: (context, state) =>
       ErrorView(exception: state.error.toString()),
