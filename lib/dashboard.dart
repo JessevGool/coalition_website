@@ -139,18 +139,9 @@ class _CoalitionDashboardState extends State<CoalitionDashboard> {
               style: TextStyle(fontSize: 50, color: Colors.white),
               textAlign: TextAlign.center),
           const SizedBox(height: 10),
-          const Text("Coalition has ArmA 3 sessions twice a week.",
+          const Text("After many years Coalition is moving on to Arma Reforger and is no longer hosting Arma 3 sessions. \n More information on upcoming Reforger Events and Sessions will be shared publicly soon, the best place to stay informed is the Coalition Discord",
               style: TextStyle(fontSize: 20, color: Colors.grey),
               textAlign: TextAlign.center),
-          const SizedBox(
-            height: 20,
-          ),
-          const Text("SATURDAY at 1700 CDT",
-              style: TextStyle(fontSize: 20, color: Colors.grey)),
-          const Text(
-            "WEDNESDAY at 1900 CDT",
-            style: TextStyle(fontSize: 20, color: Colors.grey),
-          ),
           const SizedBox(
             height: 20,
           ),
