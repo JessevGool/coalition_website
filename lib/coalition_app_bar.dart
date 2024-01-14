@@ -55,7 +55,7 @@ class CoalitionAppBar extends StatelessWidget implements PreferredSizeWidget {
             },
             child: Text(
               'JOIN',
-              style: TextStyle(color: kDarkThemeData.colorScheme.secondary),
+              style: TextStyle(color: Color(0xFFE59A18)),
             ),
           ),
         ],

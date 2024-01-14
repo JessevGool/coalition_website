@@ -14,6 +14,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-        title: 'Coalition Group', theme: kDarkThemeData, routerConfig: router);
+        title: 'Coalition Group', theme: kDarkThemeData,routerConfig: router);
   }
 }

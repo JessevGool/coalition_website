@@ -65,7 +65,7 @@ class _CoalitionDashboardState extends State<CoalitionDashboard> {
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: CachedNetworkImageProvider(i,
-                                          errorListener: () => Image.asset(
+                                          errorListener: (err) => Image.asset(
                                                 "assets/cropped-coalitionsmall-1.png",
                                               )))));
                         },
