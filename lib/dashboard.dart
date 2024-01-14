@@ -102,7 +102,7 @@ class _CoalitionDashboardState extends State<CoalitionDashboard> {
                                   children: [
                                     TextSpan(
                                       text:
-                                          "We are an adult gaming community which hosts ArmA 3 sessions twice a week as well as large, multi-community, historical battles called “CCOs” or “Coalition Community Operations” once a month.\n\n",
+                                          "We are an adult gaming community which hosts Reforger sessions once a week as well as large, multi-community, historical battles called “CCOs” or “Coalition Community Operations” once a month.\n\n",
                                     ),
                                     TextSpan(
                                       text:
